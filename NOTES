@@ -1,5 +1,3 @@
-
-
 # FlexBOX Layout
     - Difference between align items and align content
         - Align ITEM can be used when Flex wrap is disabled
