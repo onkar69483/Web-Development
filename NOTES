@@ -1,0 +1,10 @@
+
+
+# FlexBOX Layout
+    - Difference between align items and align content
+        - Align ITEM can be used when Flex wrap is disabled
+        - Align content can be used when Flex wrap is enabled
+    - CHEAT SHEET -> https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    - FLEXBOX FROGGY -> https://flexboxfroggy.com/
+
+# Flexbox Sizing
