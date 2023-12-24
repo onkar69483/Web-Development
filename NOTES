@@ -6,3 +6,4 @@
     - FLEXBOX FROGGY -> https://flexboxfroggy.com/
 
 # Flexbox Sizing
+    - Priority => content width < width < flex-basis < min-width/max-width
