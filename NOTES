@@ -7,3 +7,11 @@
 
 # Flexbox Sizing
     - Priority => content width < width < flex-basis < min-width/max-width
+
+# GRID
+    -FLexbox vs grid
+        flexbox - helps align items in horizontal line
+        grid - helps align items in 2d grid
+    - grid-template-rows: 100px auto; auto- grid is automatically going to take 100width of the window
+    - minmax(400px, 800px)
+    - repeat(2, 200px); 2 times with 200px size of row/column respectively
