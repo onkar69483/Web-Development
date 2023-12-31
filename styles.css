@@ -66,14 +66,3 @@ a:link {
     background-color: transparent;
     text-decoration: underline;
   }
-
-#result {
-    height: fit-content;
-    width: fit-content;
-    background-color: yellow;
-    text-align: center;
-    border-radius: 5px;
-    font-weight: bold;
-    align-self: flex-end;
-    
-}
