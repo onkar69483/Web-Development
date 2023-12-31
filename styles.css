@@ -42,3 +42,38 @@ h1 {
     padding: 10px;
     border-radius: 25px;
 }
+
+a:link {
+    color: rgb(9, 0, 128);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+#result {
+    height: fit-content;
+    width: fit-content;
+    background-color: yellow;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    align-self: flex-end;
+    
+}
