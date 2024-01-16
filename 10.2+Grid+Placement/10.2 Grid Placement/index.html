@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Placement</title>
+    <style>
+        body{
+            background-color: #5cbdb9;
+        }
+        .navbar{
+            display: flex; 
+            justify-content: center;
+        }
+        .navbar>div {
+            background-color: #8e44ad;
+            font-size: xx-large;
+            padding: 10px;
+            width: 50%;
+            border-radius: 10px;
+            border: solid #7c3999 2px; 
+            text-align: center;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: repeat(2, 100px);
+            background-color: #ffc04f;
+            gap: 10px;
+            height: fit-content;
+            width: fit-content;
+            padding: 25px;
+            border-radius: 1%;
+            border: solid rgb(204, 32, 13) 2px;
+            margin: auto;
+            margin-top: 50px;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .items {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5%;
+        }
+        .demo {
+            background-color: #ff5656;
+        }
+        .exercise {
+            background-color: #00B9FF;
+        }
+        a{
+            font-style: oblique;
+            color: aliceblue;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .demo:hover {
+            background-color: #cc3e3e;
+        }
+        .exercise:hover {
+            background-color: #029fd8;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>Grid Placement</div>
+    </div>
+    </div>
+    <div class="container">
+        <a href="./demo1.html" class="items demo">demo1</a>
+        <a href="./demo2.html" class="items demo">demo2</a>
+        <a href="./demo3.html" class="items demo">demo3</a>
+        <a href="./demo4.html" class="items demo">demo4</a>
+        <a href="./exercise1.html" class="items exercise">exercise1</a>
+        <a href="./exercise2.html" class="items exercise">exercise2</a>
+        <a href="./exercise3.html" class="items exercise">exercise3</a>
+      </div>      
+</body>
+</html>
