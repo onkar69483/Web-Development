@@ -1,4 +1,4 @@
-for(var i=0; i<document.querySelectorAll("button").length; i++){
+for(var i=0; i<document.querySelectorAll("button.drum").length; i++){
     var buttonEvent = document.querySelectorAll("button")[i]
 
     buttonEvent.addEventListener("click", function(){    
@@ -8,9 +8,16 @@ for(var i=0; i<document.querySelectorAll("button").length; i++){
     })
 }
 
-document.addEventListener("keypress", function(event){
+document.addEventListener("keydown", function(event){
     buttonAnimation(event.key);
     PlayAudio(event.key)
+})
+
+document.addEventListener("keyup", function(event){
+    var capsLockOn = event.getModifierState('CapsLock');
+    if(capsLockOn && event.key!="CapsLock") {
+        alert("Disable CapsLock!")
+    } 
 })
 
 function PlayAudio(text) {
@@ -33,3 +40,17 @@ function buttonAnimation(text){
         activeButton.classList.remove("pressed")
     }, 100)
 }
+
+document.querySelector(".rndSound").addEventListener("click", function(){
+    soundPath = ["sounds/tom-1.mp3", "sounds/tom-2.mp3","sounds/tom-3.mp3","sounds/tom-4.mp3","sounds/snare.mp3","sounds/crash.mp3","sounds/kick-bass.mp3"]
+    keys = ['w','a','s','d','j','k','l']
+        interval = setInterval(function(){
+            randomNum = (Math.floor(Math.random()*7))
+            buttonAnimation(keys[randomNum])
+            audio = new Audio(soundPath[randomNum])
+            audio.play() 
+        },250)
+        setTimeout(function(){
+            clearInterval(interval)
+        },5000)    
+})

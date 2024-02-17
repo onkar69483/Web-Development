@@ -14,6 +14,7 @@ h1 {
 footer {
   color: #DBEDF3;
   font-family: sans-serif;
+  margin: auto auto;
 }
 
 .w {
@@ -45,7 +46,7 @@ footer {
 }
 
 .set {
-  margin: 10% auto;
+  margin: 5% 0;
 }
 
 .game-over {
@@ -78,4 +79,22 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+
+.rndSound{
+  background-color: #DA0463;
+  border-radius: 5px;
+  height: 40px;
+  border-style: none;
+  margin-top: 2%;
+  margin-bottom: 8%;
+  color: #DBEDF3;
+  font-weight: bolder;
+  font-size: large;
+  font-style: italic;
+  font-family: cursive;
+}
+
+.rndSound:hover{
+  background-color: #b80153;
 }
