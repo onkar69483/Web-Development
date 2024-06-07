@@ -1,0 +1,4 @@
+web framework provides prebuilt functions
+
+node is javascript runtime
+it is asynchronous event driven
